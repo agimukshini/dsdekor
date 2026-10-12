@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-paper: #ffffff;
+  --color-mist: #f7f7f5;
+  --color-ink: #202020;
+  --color-muted: #666666;
+  --color-accent: #b28a58;
+  --color-accent-ink: #5c4324;
+  --color-night: #222222;
+  --color-line: #e9e7e3;
+  --color-danger: #8b2e2e;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.25rem;
+  color-scheme: light;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+@media (max-width: 1023px) {
+  html {
+    scroll-padding-bottom: calc(4.75rem + env(safe-area-inset-bottom));
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-ink);
+  outline-offset: 3px;
+}
+
+.site-footer :focus-visible,
+.hero-panel :focus-visible,
+.band :focus-visible {
+  outline-color: #ffffff;
+}
+
+.band {
+  background: var(--color-night);
+  color: #ffffff;
+}
+
+.band .text-muted {
+  color: rgb(255 255 255 / 0.78);
+}
+
+a,
+button,
+summary,
+[role="button"] {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.site-dialog {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-width: none;
+  max-height: none;
+  width: min(100%, 28rem);
+  height: 100%;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.site-dialog::backdrop {
+  background: rgb(32 32 32 / 0.45);
+}
+
+.lightbox {
+  width: min(100% - 1.5rem, 72rem);
+  height: auto;
+  max-height: calc(100% - 1.5rem);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  background: var(--color-night);
+  color: white;
+  overscroll-behavior: contain;
+}
+
+.lightbox::backdrop {
+  background: rgb(17 17 17 / 0.88);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
