@@ -1,5 +1,5 @@
 import { useEffect, useState, type MouseEvent } from "react";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import { company } from "../../data/company";
 import { navItems } from "../../data/navigation";
@@ -54,7 +54,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-[5.25rem] max-w-[1200px] items-center gap-4 px-5 sm:px-8">
         <Logo />
-        <nav className="ml-auto hidden items-center gap-7 xl:flex" aria-label="Navigation principale">
+        <nav className="ml-8 hidden items-center gap-7 xl:flex" aria-label="Navigation principale">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -66,14 +66,11 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <a
-          href={`tel:${company.phoneTel}`}
-          className="ml-auto hidden items-center gap-2 text-sm font-bold text-ink lg:ml-6 lg:inline-flex"
+        <ButtonLink
+          to={company.whatsappUrl}
+          variant="whatsapp"
+          className="ml-auto hidden lg:inline-flex"
         >
-          <Phone className="h-4 w-4 text-accent" aria-hidden="true" />
-          {company.phoneDisplay}
-        </a>
-        <ButtonLink to={company.whatsappUrl} variant="whatsapp" className="hidden lg:inline-flex">
           <WhatsAppIcon className="mr-2 h-4 w-4" />
           Demander un devis
         </ButtonLink>
@@ -104,10 +101,6 @@ export function Header() {
               </li>
             ))}
           </ul>
-          <a href={`tel:${company.phoneTel}`} className="mt-2 flex min-h-11 items-center gap-2 font-bold">
-            <Phone className="h-4 w-4 text-accent" aria-hidden="true" />
-            {company.phoneDisplay}
-          </a>
           <ButtonLink to={`mailto:${company.email}`} className="mt-3 w-full">
             Écrire un e-mail
           </ButtonLink>

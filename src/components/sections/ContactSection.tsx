@@ -35,9 +35,9 @@ export function ContactSection() {
                 >
                   <MapPin className="mt-1 h-4 w-4 shrink-0 text-accent" aria-hidden="true" />
                   <span>
-                    36, rue du Salève
+                    1, Impasse des Écrins
                     <br />
-                    74100 Annemasse
+                    74100 Vétraz-Monthoux
                   </span>
                 </a>
               </dd>

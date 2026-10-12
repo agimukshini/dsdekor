@@ -15,10 +15,10 @@ export function MobileContactBar() {
           href={company.whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex min-h-14 items-center justify-center gap-2 bg-[#075E54] text-sm font-semibold text-white"
+          className="inline-flex min-h-14 items-center justify-center bg-[#075E54] text-white"
+          aria-label="WhatsApp"
         >
-          <WhatsAppIcon className="h-4 w-4" />
-          WhatsApp
+          <WhatsAppIcon className="h-5 w-5" />
         </a>
       </div>
     </div>

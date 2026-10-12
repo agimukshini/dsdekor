@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Add an absolute Sitemap URL once the production domain is confirmed.
-# Sitemap: https://www.example.fr/sitemap.xml
+# Sitemap: https://ds-dekor.eu/sitemap.xml

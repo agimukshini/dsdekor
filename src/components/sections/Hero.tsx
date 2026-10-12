@@ -26,7 +26,7 @@ export function Hero() {
           </h1>
           <p className="mt-5 max-w-lg text-sm leading-relaxed text-white/90 sm:text-base">
             Peinture, plâtrerie, carrelage, aménagement extérieur, nettoyage et déménagement. DS DEKOR accompagne les
-            particuliers et les professionnels dans leurs projets partout en France.
+            particuliers et les professionnels dans leurs projets en Haute-Savoie et dans le Pays de Gex.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <ButtonLink to={`mailto:${company.email}`} className="rounded-full px-6">

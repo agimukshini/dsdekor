@@ -40,11 +40,6 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href={company.whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                WhatsApp {company.phoneInternational}
-              </a>
-            </li>
-            <li>
               <a
                 href={company.addressMaps}
                 target="_blank"

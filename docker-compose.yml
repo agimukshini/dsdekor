@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        VITE_SITE_URL: https://ds-dekor.eu
+    image: ds-dekor-web
+    container_name: ds-dekor-website
+    networks:
+      - npm_network
+    restart: unless-stopped
+
+networks:
+  npm_network:
+    external: true
+    name: npm_default

@@ -20,8 +20,8 @@ const reasons: readonly { title: string; text: string; icon: LucideIcon }[] = [
     icon: MessageCircle,
   },
   {
-    title: "Intervention partout en France",
-    text: "Des prestations proposées aux particuliers et aux professionnels sur l'ensemble du territoire français.",
+    title: "Intervention en Haute-Savoie / Pays de Gex",
+    text: "Des prestations proposées aux particuliers et aux professionnels en Haute-Savoie et dans le Pays de Gex.",
     icon: MapPinned,
   },
 ];
