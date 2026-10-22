@@ -2,18 +2,13 @@ import { MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { company } from "../../data/company";
 import { legalLinks, navItems } from "../../data/navigation";
-import { Logo } from "../brand/Logo";
 
 export function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer id="contact" className="site-footer bg-night text-white">
-      <div className="mx-auto grid max-w-[1200px] gap-6 px-5 py-8 sm:px-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-        <div>
-          <Logo plate />
-          <p className="mt-3 max-w-xs text-sm leading-snug text-white/75">{company.secondarySlogan}</p>
-        </div>
+      <div className="mx-auto grid max-w-[1200px] gap-8 px-5 py-8 sm:px-8 md:grid-cols-3 md:gap-10">
         <div>
           <h2 className="font-display text-xs font-semibold tracking-[0.14em] text-accent uppercase">Navigation</h2>
           <ul className="mt-2.5 space-y-1">
@@ -68,7 +63,9 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-[1200px] flex-col gap-1 px-5 py-3 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <p>© {year} DS DEKOR. Tous droits réservés.</p>
+          <p>
+            © {year} {company.name}. {company.secondarySlogan}.
+          </p>
           <a href="https://scardustech.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
             Powered by Scardus Tech L.L.C
           </a>
