@@ -7,7 +7,9 @@ dist
 !.env.example
 *.md
 New Text Document.txt
-work_images
+# Keep map.jpg so Docker can publish it; ignore the rest of the media dump.
+work_images/*
+!work_images/map.jpg
 hero_section
 working_scope
 .vscode

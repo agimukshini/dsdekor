@@ -8,6 +8,9 @@ RUN npm ci
 
 COPY . .
 
+# Site serves /zone/map.jpg; source of truth is work_images/map.jpg in git.
+RUN mkdir -p public/zone && cp work_images/map.jpg public/zone/map.jpg
+
 ARG VITE_SITE_URL=https://ds-dekor.eu
 ENV VITE_SITE_URL=$VITE_SITE_URL
 
