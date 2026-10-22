@@ -17,15 +17,16 @@ export function CoverageSection() {
             <p className="mt-8 font-display text-xl font-semibold">Zone d'intervention : Haute-Savoie / Pays de Gex</p>
           </div>
           <div className="flex justify-start lg:justify-end">
-            <img
-              src="/zone/map.jpg"
-              alt="Carte de la zone d'intervention Haute-Savoie et Pays de Gex"
-              className="h-auto w-full max-w-md object-contain"
-              width={1536}
-              height={1024}
-              loading="lazy"
-              decoding="async"
-            />
+            <div className="w-full max-w-lg rounded-lg border border-line bg-mist p-3 sm:p-4">
+              <img
+                src="/zone/map.jpg"
+                alt="Carte de la zone d'intervention Haute-Savoie et Pays de Gex"
+                className="h-auto w-full object-contain"
+                width={1536}
+                height={1024}
+                decoding="async"
+              />
+            </div>
           </div>
         </div>
       </Container>
