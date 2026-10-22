@@ -5,7 +5,7 @@ export function AboutSection() {
   return (
     <Section id="a-propos" labelledBy="apropos-titre" className="bg-mist">
       <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+        <div className="mx-auto grid max-w-[920px] items-center gap-8 lg:grid-cols-2 lg:gap-12">
           <img
             src="/showroom/habillage-cheminee.jpg"
             alt="Habillage blanc d'une cheminée avec niches, dans un intérieur en finition."
@@ -15,11 +15,11 @@ export function AboutSection() {
             decoding="async"
             className="h-auto w-full"
           />
-          <div>
+          <div className="max-w-md">
             <h2 id="apropos-titre" className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
               À propos de DS DEKOR
             </h2>
-            <div className="mt-6 space-y-4 text-muted">
+            <div className="mt-5 space-y-3 text-muted">
               <p>
                 Chez DS DEKOR, nous accompagnons les particuliers et les professionnels dans leurs projets de
                 rénovation, d'aménagement, de nettoyage et de déménagement.
