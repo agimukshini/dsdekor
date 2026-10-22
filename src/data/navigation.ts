@@ -3,7 +3,6 @@ export const navItems = [
   { href: "/#services", label: "Nos services" },
   { href: "/#a-propos", label: "À propos" },
   { href: "/#realisations", label: "Réalisations" },
-  { href: "/#contact", label: "Contact" },
 ] as const;
 
 export const legalLinks = [
