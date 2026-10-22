@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { SiteShell } from "../components/layout/SiteShell";
 import { AboutSection } from "../components/sections/AboutSection";
-import { ContactSection } from "../components/sections/ContactSection";
 import { CoverageSection } from "../components/sections/CoverageSection";
 import { GallerySection } from "../components/sections/GallerySection";
 import { Hero } from "../components/sections/Hero";
@@ -31,7 +30,6 @@ export function HomePage() {
       <WhySection />
       <GallerySection />
       <CoverageSection />
-      <ContactSection />
     </SiteShell>
   );
 }

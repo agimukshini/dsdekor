@@ -8,15 +8,15 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="site-footer bg-night text-white">
-      <div className="mx-auto grid max-w-[1200px] gap-12 px-5 py-16 sm:px-8 md:grid-cols-2 lg:grid-cols-4">
+    <footer id="contact" className="site-footer bg-night text-white">
+      <div className="mx-auto grid max-w-[1200px] gap-6 px-5 py-8 sm:px-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         <div>
           <Logo plate />
-          <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/75">{company.secondarySlogan}</p>
+          <p className="mt-3 max-w-xs text-sm leading-snug text-white/75">{company.secondarySlogan}</p>
         </div>
         <div>
-          <h2 className="font-display text-sm font-semibold tracking-[0.14em] text-accent uppercase">Navigation</h2>
-          <ul className="mt-4 space-y-2">
+          <h2 className="font-display text-xs font-semibold tracking-[0.14em] text-accent uppercase">Navigation</h2>
+          <ul className="mt-2.5 space-y-1">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a href={item.href} className="text-sm text-white/80 hover:text-white">
@@ -27,8 +27,8 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <h2 className="font-display text-sm font-semibold tracking-[0.14em] text-accent uppercase">Contact</h2>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
+          <h2 className="font-display text-xs font-semibold tracking-[0.14em] text-accent uppercase">Contact</h2>
+          <ul className="mt-2.5 space-y-1 text-sm text-white/80">
             <li>
               <a href={`tel:${company.phoneTel}`} className="hover:text-white">
                 {company.phoneDisplay}
@@ -46,7 +46,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-start gap-2 hover:text-white"
               >
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true" />
+                <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent" aria-hidden="true" />
                 <span>{company.address}</span>
               </a>
             </li>
@@ -54,8 +54,8 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <h2 className="font-display text-sm font-semibold tracking-[0.14em] text-accent uppercase">Informations</h2>
-          <ul className="mt-4 space-y-2">
+          <h2 className="font-display text-xs font-semibold tracking-[0.14em] text-accent uppercase">Informations</h2>
+          <ul className="mt-2.5 space-y-1">
             {legalLinks.map((item) => (
               <li key={item.href}>
                 <Link to={item.href} className="text-sm text-white/80 hover:text-white">
@@ -67,7 +67,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[1200px] flex-col gap-2 px-5 py-5 text-sm text-white/60 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <div className="mx-auto flex max-w-[1200px] flex-col gap-1 px-5 py-3 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <p>© {year} DS DEKOR. Tous droits réservés.</p>
           <a href="https://scardustech.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
             Powered by Scardus Tech L.L.C
